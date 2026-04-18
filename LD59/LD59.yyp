@@ -41,6 +41,7 @@
     {"id":{"name":"roomThrasherTest","path":"rooms/roomThrasherTest/roomThrasherTest.yy",},},
     {"id":{"name":"roomTitle","path":"rooms/roomTitle/roomTitle.yy",},},
     {"id":{"name":"scrFixtures","path":"scripts/scrFixtures/scrFixtures.yy",},},
+    {"id":{"name":"scrPlatforms","path":"scripts/scrPlatforms/scrPlatforms.yy",},},
     {"id":{"name":"Shader1","path":"shaders/Shader1/Shader1.yy",},},
     {"id":{"name":"sprGoal","path":"sprites/sprGoal/sprGoal.yy",},},
     {"id":{"name":"sprMacguffin","path":"sprites/sprMacguffin/sprMacguffin.yy",},},

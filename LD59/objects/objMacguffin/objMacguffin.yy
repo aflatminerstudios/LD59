@@ -3,7 +3,7 @@
   "%Name":"objMacguffin",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objPlatformBase","path":"objects/objPlatformBase/objPlatformBase.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objMacguffin",
@@ -23,7 +23,7 @@
   "physicsGroup":1,
   "physicsKinematic":false,
   "physicsLinearDamping":0.1,
-  "physicsObject":true,
+  "physicsObject":false,
   "physicsRestitution":0.6,
   "physicsSensor":false,
   "physicsShape":0,
