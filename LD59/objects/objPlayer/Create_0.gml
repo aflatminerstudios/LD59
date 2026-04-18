@@ -7,3 +7,4 @@ beamOn = false
 
 whichBeam = objBaseBeam
 beamComplete = false
+beam = noone
