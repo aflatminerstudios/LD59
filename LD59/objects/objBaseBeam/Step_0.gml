@@ -1,7 +1,7 @@
 ///Check for collision with various things
 
 //If you collide with a moving platform
-if (collision_line(x, y, targetX, targetY, other, true, true)) {
+/*if (collision_line(x, y, targetX, targetY, all, true, true)) {
 
 	//make it moving
 	with (other) {
@@ -13,5 +13,19 @@ if (collision_line(x, y, targetX, targetY, other, true, true)) {
 			scrMovePlatform(id)
 		}
 	
+	}
+}*/
+
+platforms = physics_raycast(x, y, targetX, targetY, objPlatformBase, true, 1.05)
+
+for (var i = 0; i < array_length(platforms); i++) {
+	with (platforms[i].instance) {
+		if physics_get_density(self.bound_fix) == 0 {
+			show_debug_message("changing fixture")
+			physics_remove_fixture(self.id, self.bound_fix)
+			bound_fix = scrCreateMovingPlatformFixture(self.id)
+	//		physics_apply_impulse(x, y, xSpeed, ySpeed)
+			scrMovePlatform(id)
+		}
 	}
 }

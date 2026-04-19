@@ -1,3 +1,5 @@
+live_auto_call;
+
 //draw_set_color(c_white)
 //draw_line_width(targetX, targetY, x, y, beamWidth)
 
