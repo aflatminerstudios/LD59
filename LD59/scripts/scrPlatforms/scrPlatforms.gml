@@ -44,7 +44,7 @@ function scrStopPlatform(platform) {
 	}
 	
 	with (objMacguffin) {
-		PRINT "WMG2"
+		
 		if (joint != noone) {
 			PRINT "Deleting joint"
 			physics_joint_delete(joint)

@@ -81,3 +81,29 @@ function scrCreateMacguffinFixture(mcG) {
 	physics_fixture_delete(_fix)
 	return bound_fix	
 }
+
+
+/// @function scrCreateSpringFixture(spring)
+/// @description set a basic spring fixture
+/// @param {Id.Instance} spring which springto set this on
+/// @return {Fixture ID}
+function scrCreateSpringFixture(spring) {
+	//For physics
+	var _fix
+
+	//create fixture
+	_fix = physics_fixture_create()
+
+	//set shape and other vairables for fixture
+	physics_fixture_set_box_shape(_fix, 10, 10)
+	physics_fixture_set_density(_fix, 0)
+	physics_fixture_set_restitution(_fix, 1)
+	physics_fixture_set_awake(_fix, true)
+	
+
+	//Bind and store fixture
+	spring.bound_fix = physics_fixture_bind(_fix, spring.id)	
+	
+	physics_fixture_delete(_fix)
+	return bound_fix
+}
