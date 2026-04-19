@@ -11,3 +11,15 @@ if physics_test_overlap(x, y, dir, objMacguffin) && phy_speed_x < maxXSpeed
 	//scrMovePlatform(self.id)
 }
 
+
+
+if (!isPowered) {
+	path_speed = 0	
+}
+
+if (path_position == 1) {
+	with (objMacguffin) {
+		PRINT "Removing joint"
+		physics_joint_delete(joint)
+	}
+}

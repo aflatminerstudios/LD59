@@ -54,6 +54,7 @@
     {"id":{"name":"objPlatformMoving","path":"objects/objPlatformMoving/objPlatformMoving.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
     {"id":{"name":"objStatic","path":"objects/objStatic/objStatic.yy",},},
+    {"id":{"name":"pathTest","path":"paths/pathTest/pathTest.yy",},},
     {"id":{"name":"roomInitialize","path":"rooms/roomInitialize/roomInitialize.yy",},},
     {"id":{"name":"roomLevel1","path":"rooms/roomLevel1/roomLevel1.yy",},},
     {"id":{"name":"roomLevel2","path":"rooms/roomLevel2/roomLevel2.yy",},},

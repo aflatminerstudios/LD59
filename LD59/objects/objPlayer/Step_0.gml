@@ -53,7 +53,7 @@ if (beam != noone && beamLength > 0) {
 		beamDir = point_direction(phy_position_x, phy_position_y, mouse_x, mouse_y)
 		//show_debug_message(string(mouse_x) + ", " + string(mouse_y) + " = " + string(beamDir))
 	} else if (gamepad_button_check(0, gp_shoulderrb)) {
-		//If should button pressed, aim based on the direction the joystick is pushed
+		//If shoulder button pressed, aim based on the direction the joystick is pushed
 		var haxis = gamepad_axis_value(0, gp_axislh);
 		var vaxis = gamepad_axis_value(0, gp_axislv);
 		beamDir = point_direction(0, 0, haxis, vaxis);
