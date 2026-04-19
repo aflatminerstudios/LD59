@@ -36,3 +36,11 @@ for (var i = 0; i < array_length(platforms); i++) {
 	}
 }
 
+fans = physics_raycast(x, y, targetX, targetY, objFan, true, 1.05)
+
+for (var i = 0; i < array_length(fans); i++) {
+	count = count + 1
+	with (fans[i].instance) {
+		scrFanPush(self.id)
+	}
+}
