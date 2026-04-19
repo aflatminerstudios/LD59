@@ -78,3 +78,23 @@ with (beam)
 show_debug_message("dir = " + string(beamDir) + ", length = " + string(beamLength))
 */
 
+
+
+
+
+
+
+///Player movement
+var key_left =  (keyboard_check(vk_left) || keyboard_check(ord("A"))) 
+var key_right = keyboard_check(vk_right) || keyboard_check(ord("D"))
+var key_up = keyboard_check(vk_up) || keyboard_check(ord("W"))
+var key_down = keyboard_check(vk_down) || keyboard_check(ord("S"))
+
+
+var move_x = key_right - key_left
+var move_y = key_down - key_up
+
+if (beam == noone) {
+	phy_position_x += move_x * move_speed
+	phy_position_y += move_y * move_speed
+}

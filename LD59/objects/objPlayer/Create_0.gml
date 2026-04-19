@@ -12,3 +12,4 @@ beamComplete = false
 whichBeam = objBaseBeam
 
 beam = noone
+move_speed = 4
