@@ -1,10 +1,15 @@
+LIVE
+
+live_name="argh"
 
 // IF player is holding down a button, turn beam on and create an instance if one doesn't exist
-if (gamepad_button_check(0, gp_shoulderr) || mouse_check_button(mb_left)) {
+if (gamepad_button_check(0, gp_shoulderrb) || mouse_check_button(mb_left)) {
 	beamOn = true	
-	if (beam = noone)
+	if (beam = noone) {
 		beam = instance_create_layer(x, y, "Instances", whichBeam)
-		
+		beamDir = point_direction(phy_position_x, phy_position_y, mouse_x, mouse_y)
+	}
+	
 		
 } else {
 	//If player is not holding down a button, turn the beam off
@@ -47,9 +52,9 @@ if (beam != noone && beamLength > 0) {
 	
 	if (mouse_check_button(mb_left)) {
 		//If mouse is pressed, point towaqrds mouse
-		beamDir = point_direction(0, 0, mouse_x, mouse_y)
+		beamDir = point_direction(phy_position_x, phy_position_y, mouse_x, mouse_y)
 		//show_debug_message(string(mouse_x) + ", " + string(mouse_y) + " = " + string(beamDir))
-	} else if (gamepad_button_check(0, gp_shoulderr)) {
+	} else if (gamepad_button_check(0, gp_shoulderrb)) {
 		//If should button pressed, aim based on the direction the joystick is pushed
 		var haxis = gamepad_axis_value(0, gp_axislh);
 		var vaxis = gamepad_axis_value(0, gp_axislv);
@@ -61,13 +66,17 @@ if (beam != noone && beamLength > 0) {
 	
 	//Set the target position for the beam based on the length/direction
 	with (beam) {
-		targetX = lengthdir_x(other.beamLength, other.beamDir)
-		targetY = lengthdir_y(other.beamLength, other.beamDir)
+		targetX = x + lengthdir_x(other.beamLength, other.beamDir)
+		targetY = y + lengthdir_y(other.beamLength, other.beamDir)
 	}
 
 }
 
+
+/*
 show_debug_message(string(mouse_x) + ", " + string(mouse_y) + " = " + string(beamDir))
 with (beam) 
 	show_debug_message(string(targetX) + ", " + string(targetY) + " beam")
 show_debug_message("dir = " + string(beamDir) + ", length = " + string(beamLength))
+*/
+

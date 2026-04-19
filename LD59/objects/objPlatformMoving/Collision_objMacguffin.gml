@@ -4,7 +4,7 @@ with (other) {
 }
 */
 
-show_debug_message("x" + string(xSpeed) + "y" + string(ySpeed))
+//show_debug_message("x" + string(xSpeed) + "y" + string(ySpeed))
 //physics_apply_impulse(x, y, xSpeed, ySpeed)
 
 //scrMovePlatform(other.id)	

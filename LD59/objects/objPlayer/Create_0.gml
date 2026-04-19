@@ -1,6 +1,6 @@
 ///Setup variables
 
-beamDir = 90
+beamDir = point_direction(phy_position_x, phy_position_y, mouse_x, mouse_y)
 beamLength = 0
 
 //Is beam on?

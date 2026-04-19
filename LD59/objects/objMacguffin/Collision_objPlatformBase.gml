@@ -1,4 +1,4 @@
-with (other) {
+/*with (other) {
 	if physics_get_density(bound_fix) == 0 {
 		show_debug_message("changing fixture")
 		physics_remove_fixture(self.id, bound_fix)
@@ -17,3 +17,5 @@ if (self.joint == noone) {
 } else {
 	//scrMovePlatform(other.id)	
 }
+
+*/

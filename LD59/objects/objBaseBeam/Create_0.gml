@@ -1,10 +1,10 @@
 ///Setup variables
 
 
-maxLength = 100
+maxLength = 500
 
 beamWidth = 5
-beamSpeed = 2
+beamSpeed = 8
 
 
 
