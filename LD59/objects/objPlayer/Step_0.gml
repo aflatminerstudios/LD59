@@ -1,5 +1,3 @@
-LIVE
-
 live_name="argh"
 
 // IF player is holding down a button, turn beam on and create an instance if one doesn't exist
