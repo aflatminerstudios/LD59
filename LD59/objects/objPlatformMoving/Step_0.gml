@@ -20,6 +20,9 @@ if (!isPowered) {
 if (path_position == 1) {
 	with (objMacguffin) {
 		PRINT "Removing joint"
-		physics_joint_delete(joint)
+		if (joint != noone) {
+			physics_joint_delete(joint)
+			joint = noone
+		}
 	}
 }

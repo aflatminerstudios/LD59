@@ -15,11 +15,20 @@ function scrMovePlatform(platform){
 	//platform.phy_speed_x = xSpeed
 //	platform.phy_speed_y = ySpeed
 
-with platform {
-	isPowered = true
-	path_speed = pSpeed
+	with platform {
+		isPowered = true
+		path_speed = pSpeed
 	
-}
+	}
+	
+	//Set joint if it is not set
+	with (objMacguffin) {
+		//PRINT string(self.joint) + " is " + string(noone) + "?"
+		if (self.joint == noone) {
+			PRINT "Setting joint"
+			joint = physics_joint_distance_create(self.id, other.id, self.x, self.y + self.sprite_height / 2, other.x, other.y - other.sprite_height / 2,  false)	
+		}
+	}
 	
 }
 
@@ -32,5 +41,14 @@ with platform {
 function scrStopPlatform(platform) {
 	with (platform) {
 		path_speed = 0	
+	}
+	
+	with (objMacguffin) {
+		PRINT "WMG2"
+		if (joint != noone) {
+			PRINT "Deleting joint"
+			physics_joint_delete(joint)
+			joint = noone
+		}
 	}
 }
