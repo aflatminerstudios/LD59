@@ -19,7 +19,7 @@ yForce = 20
 
 path = pathTest
 pSpeed = 2
-path_start(path, pSpeed, path_action_stop, false)
+path_start(path, pSpeed, path_action_reverse, false)
 
 maxXSpeed = 5
 
