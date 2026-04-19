@@ -16,7 +16,7 @@
 	}
 }*/
 
-platforms = physics_raycast(x, y, targetX, targetY, objPlatformBase, true, 1.05)
+platforms = physics_raycast(x, y, targetX, targetY, objPlatformMoving, true, 1.05)
 
 for (var i = 0; i < array_length(platforms); i++) {
 	with (platforms[i].instance) {

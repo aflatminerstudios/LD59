@@ -31,7 +31,7 @@ function scrCreatePlatformFixture(platform) {
 /// @description set a moving platform fixture
 /// @param {Id.Instance} platform  which platform to set this on
 /// @return {Fixture ID}
-function scrCreateMovingPlatformFixture(platform) {
+function scrCreateMovingPlatformFixture(platform, d = 0.2) {
 	//For physics
 	var _fix
 
@@ -40,7 +40,7 @@ function scrCreateMovingPlatformFixture(platform) {
 
 	//set shape and other vairables for fixture
 	physics_fixture_set_box_shape(_fix, 10, 10)
-	physics_fixture_set_density(_fix, 0.2)
+	physics_fixture_set_density(_fix, d)
 	physics_fixture_set_restitution(_fix, 0.25)
 	physics_fixture_set_awake(_fix, true)
 	physics_fixture_set_kinematic(_fix)

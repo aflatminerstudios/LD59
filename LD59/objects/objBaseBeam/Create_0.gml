@@ -4,7 +4,7 @@
 maxLength = 500
 
 beamWidth = 5
-beamSpeed = 8
+beamSpeed = 500
 
 
 

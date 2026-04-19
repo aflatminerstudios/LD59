@@ -4,6 +4,6 @@
 /// @return {Fixture ID}
 
 function scrMovePlatform(platform){
-	//physics_apply_impulse(x, y, xSpeed, ySpeed)
-	physics_apply_force(x, y, xForce, yForce)
+	physics_apply_impulse(x, y, xSpeed, ySpeed)
+	//physics_apply_force(x, y, xForce, yForce)
 }
