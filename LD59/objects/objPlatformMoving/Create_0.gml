@@ -7,13 +7,19 @@ flag = phy_debug_render_coms | phy_debug_render_shapes;
 physics_world_draw_debug(flag)
 
 */
+event_inherited()
 
-xSpeed = 100
-ySpeed = 8
+
+xSpeed = 3
+
+ySpeed = 2
 
 xForce = 100
 yForce = 20
 
+path = pathTest
+pSpeed = 2
+path_start(path, pSpeed, path_action_stop, false)
 
 maxXSpeed = 5
 
