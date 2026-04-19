@@ -6,8 +6,8 @@ else
 
 if physics_test_overlap(x, y, dir, objMacguffin) && phy_speed_x < maxXSpeed
 {
-	show_debug_message("Applying force, old x = " + string(phy_speed_x))
+	//show_debug_message("Applying force, old x = " + string(phy_speed_x))
 	
-	scrMovePlatform(self.id)
+	//scrMovePlatform(self.id)
 }
 
