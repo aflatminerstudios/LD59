@@ -23,9 +23,10 @@ with (objPlatformMoving) {
 	isPowered = false
 }
 
-for (var i = 0; i < array_length(platforms); i++) {
-	count = count + 1
+for (var i = 0; i < array_length(platforms); i++) {	
+	count = count + 1	
 	with (platforms[i].instance) {
+		//PRINT string(other.count) + "Instance " + string(self.id)
 		if physics_get_density(self.bound_fix) == 0 {
 			//show_debug_message("changing fixture")
 			//physics_remove_fixture(self.id, self.bound_fix)

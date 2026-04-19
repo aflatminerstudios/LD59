@@ -25,4 +25,5 @@ maxXSpeed = 5
 
 scrCreatePlatformFixture(self.id)
 
+count = 0
 

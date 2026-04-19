@@ -26,15 +26,9 @@ function scrFanBlow(fan){
 					physics_apply_force(xPoint, yPoint, xForce, yForce)
 				}
 			}
-			
-			PRINT "Blowing @ " + string(xPoint) + ", " + string(yPoint)
-			PRINT "Blowing Force " + string(xForce) + ", " + string(yForce)
+		
 	}
-	with (objMacguffin) {
-	//	physics_apply_force(x, y, xForce, yForce)
-		PRINT "Macguffin x/y: " + string(x) + ", " + string(y)
-		PRINT "Macguffin Force " + string(xForce) + ", " + string(yForce)
-	}
+
 
 
 }

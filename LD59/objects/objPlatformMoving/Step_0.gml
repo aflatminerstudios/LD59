@@ -1,3 +1,5 @@
+event_inherited()
+
 if instance_number(objMacguffin) > 0
 	dir = point_direction(x, y, objMacguffin.x, objMacguffin.y)
 else
@@ -11,10 +13,23 @@ if physics_test_overlap(x, y, dir, objMacguffin) && phy_speed_x < maxXSpeed
 	//scrMovePlatform(self.id)
 }
 
+if (place_meeting(x, y, objPlatformBase)) {
+	isPowered = false	
+}
 
+//PRINT "Is powered " + string(isPowered) + ", " + string(count)
 
 if (!isPowered) {
-	path_speed = 0	
+	
+	path_speed = 0
+	
+	with (objMacguffin) {
+		if (joint != noone) {
+			physics_joint_delete(joint)
+			joint = noone
+		}
+	}
+	
 }
 
 if (path_position == 1) {
