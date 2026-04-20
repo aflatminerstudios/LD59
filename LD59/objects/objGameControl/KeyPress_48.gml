@@ -1,2 +1,2 @@
-///When you hit 0, goto initialize room
-room_goto(roomInitialize)
+///When you hit 0, goto Title room
+room_goto(roomTitle)
