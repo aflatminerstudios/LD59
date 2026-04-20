@@ -11,7 +11,10 @@ function scrCreatePlatformFixture(platform) {
 	_fix = physics_fixture_create()
 
 	//set shape and other vairables for fixture
-	physics_fixture_set_box_shape(_fix, 10, 10)
+	physics_fixture_set_box_shape(_fix, (sprite_width / 2), (sprite_height / 2))
+	PRINT string(sprite_width) + ", " + string(image_xscale)
+	
+	
 	physics_fixture_set_density(_fix, 0)
 	physics_fixture_set_restitution(_fix, 0.25)
 	physics_fixture_set_awake(_fix, true)
@@ -42,7 +45,7 @@ function scrCreateMovingPlatformFixture(platform, d = 0.2) {
 	_fix = physics_fixture_create()
 
 	//set shape and other vairables for fixture
-	physics_fixture_set_box_shape(_fix, 10, 10)
+	physics_fixture_set_box_shape(_fix, (sprite_width * image_xscale) / 2, (sprite_height * image_yscale / 2))
 	physics_fixture_set_density(_fix, d)
 	physics_fixture_set_restitution(_fix, 0.25)
 	physics_fixture_set_awake(_fix, true)

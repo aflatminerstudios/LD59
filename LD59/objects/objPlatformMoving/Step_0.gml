@@ -32,12 +32,24 @@ if (!isPowered) {
 	
 }
 
-if (path_position == 1) {
+if (path_position >= 1) {
+	
+	if (!completed) {
+		pSpeed *= -1
+		completed = true
+	}
 	with (objMacguffin) {
 		PRINT "Removing joint"
 		if (joint != noone) {
 			physics_joint_delete(joint)
 			joint = noone
+			phy_position_y = other.y - other.sprite_height/2
 		}
 	}
 }
+
+if (completed && path_position <= 0.05) {
+	completed = false
+	pSpeed *= -1
+}
+

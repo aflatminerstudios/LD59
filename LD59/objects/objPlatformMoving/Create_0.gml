@@ -22,6 +22,7 @@ pSpeed = 2
 path_start(path, pSpeed, path_action_reverse, false)
 
 maxXSpeed = 5
+completed = false
 
 scrCreatePlatformFixture(self.id)
 

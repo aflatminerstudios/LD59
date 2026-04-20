@@ -28,7 +28,8 @@ function scrMovePlatform(platform){
 			//PRINT string(self.joint) + " is " + string(noone) + "?"
 			if (self.joint == noone) {
 				PRINT "Setting joint"
-				joint = physics_joint_distance_create(self.id, other.id, self.x, self.y + self.sprite_height / 2, other.x, other.y - other.sprite_height / 2,  false)	
+				//joint = physics_joint_distance_create(self.id, other.id, self.x, self.y + self.sprite_height / 2, other.x, other.y - other.sprite_height / 2,  false)	
+				joint = physics_joint_rope_create(self.id, other.id, self.x, self.y + self.sprite_height / 2, other.x, other.y - other.sprite_height / 2,  2, false)	
 			}
 		}
 	}
