@@ -45,15 +45,20 @@ for (var i = 0; i < array_length(fans); i++) {
 		scrFanBlow(self.id)
 	}
 }
+/*
 
-
-objects = physics_raycast(x, y, targetX, targetY, other, false, 1) 
+objects = physics_raycast(x, y, targetX, targetY, all, true, 1) 
 
 if (array_length(objects) > 0) {
 	PRINT "Colliding"
+	
+	dist = distance_to_object(objects[0].instance)
 	with (owner) {
 		
 		beamComplete = true
+		
+		beamlength = other.dist
+		
 	}
 	
-}
+}*/
