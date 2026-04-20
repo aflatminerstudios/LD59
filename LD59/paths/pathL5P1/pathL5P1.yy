@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"pathL5P1",
+  "closed":false,
+  "kind":0,
+  "name":"pathL5P1",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":131.0,"y":127.0,},
+    {"speed":100.0,"x":419.0,"y":128.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

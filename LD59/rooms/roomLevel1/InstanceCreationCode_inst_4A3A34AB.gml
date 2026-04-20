@@ -1,0 +1,1 @@
+totalPower = 90

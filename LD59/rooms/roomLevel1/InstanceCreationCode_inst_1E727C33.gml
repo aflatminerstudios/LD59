@@ -1,0 +1,1 @@
+totalForce = 80

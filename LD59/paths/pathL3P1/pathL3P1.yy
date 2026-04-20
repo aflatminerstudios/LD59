@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"pathL3P1",
+  "closed":false,
+  "kind":0,
+  "name":"pathL3P1",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":541.0,"y":384.0,},
+    {"speed":100.0,"x":391.0,"y":260.0,},
+    {"speed":100.0,"x":540.0,"y":262.0,},
+    {"speed":100.0,"x":403.0,"y":378.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
