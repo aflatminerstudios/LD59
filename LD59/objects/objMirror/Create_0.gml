@@ -1,0 +1,1 @@
+scrCreateMirrorFixture(self.id)

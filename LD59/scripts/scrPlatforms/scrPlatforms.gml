@@ -19,17 +19,18 @@ function scrMovePlatform(platform){
 		isPowered = true
 		path_speed = pSpeed
 	
-	}
 	
 	
-	if physics_test_overlap(x, y-5, 0, objMacguffin) {
-	//Set joint if it is not set
-		with (objMacguffin) {
-			//PRINT string(self.joint) + " is " + string(noone) + "?"
-			if (self.joint == noone) {
-				PRINT "Setting joint"
-				//joint = physics_joint_distance_create(self.id, other.id, self.x, self.y + self.sprite_height / 2, other.x, other.y - other.sprite_height / 2,  false)	
-				joint = physics_joint_rope_create(self.id, other.id, self.x, self.y + self.sprite_height / 2, other.x, other.y - other.sprite_height / 2,  2, false)	
+	
+		if physics_test_overlap(x, y-5, 0, objMacguffin) {
+		//Set joint if it is not set
+			with (objMacguffin) {
+				//PRINT string(self.joint) + " is " + string(noone) + "?"
+				if (self.joint == noone) {
+					PRINT "Setting joint"
+					//joint = physics_joint_distance_create(self.id, other.id, self.x, self.y + self.sprite_height / 2, other.x, other.y - other.sprite_height / 2,  false)	
+					joint = physics_joint_rope_create(self.id, other.id, self.x, self.y + self.sprite_height / 2 + 3, other.x, other.y - other.sprite_height / 2 - 3,  5, false)	
+				}
 			}
 		}
 	}

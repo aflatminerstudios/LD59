@@ -1,0 +1,1 @@
+scrSetPath(self.id, pathL1P2)

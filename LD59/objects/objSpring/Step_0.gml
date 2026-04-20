@@ -14,6 +14,6 @@ if physics_test_overlap(x, y, image_angle, objMacguffin) {
 
 		physics_apply_force(x, y, xPush, yPush)
 		
-		PRINT string(xPush) + ", " + string(yPush) + " pushed"
+		//PRINT string(xPush) + ", " + string(yPush) + " pushed"
 	}
 }
