@@ -13,8 +13,15 @@
 
 
 
+// List of whether levels are complete or not, could be binary flag based if there are multiple exits
+global.level_state_1 = 0; // 0 = Unfinished, 1 = Finished
+global.level_state_2 = 0;
+global.level_state_3 = 0;
+global.level_state_4 = 0;
+global.level_state_5 = 0;
+
+
 
 
 // Once all initialization tasks are done, move to the title screen
-
 room_goto(roomTitle);
