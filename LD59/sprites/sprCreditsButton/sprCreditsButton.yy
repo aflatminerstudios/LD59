@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"LD59",
-    "path":"LD59.yyp",
+    "name":"misc_screens",
+    "path":"folders/Sprites/misc_screens.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
