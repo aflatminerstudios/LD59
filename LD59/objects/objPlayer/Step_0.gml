@@ -6,6 +6,7 @@ if (gamepad_button_check(0, gp_shoulderrb) || mouse_check_button(mb_left)) {
 	if (beam = noone) {
 		beam = instance_create_layer(x, y, "Instances", whichBeam)
 		beamDir = point_direction(phy_position_x, phy_position_y, mouse_x, mouse_y)
+		beam.owner = self.id
 	}
 	
 		

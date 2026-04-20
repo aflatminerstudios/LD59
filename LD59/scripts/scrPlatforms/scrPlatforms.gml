@@ -27,7 +27,7 @@ function scrMovePlatform(platform){
 			with (objMacguffin) {
 				//PRINT string(self.joint) + " is " + string(noone) + "?"
 				if (self.joint == noone) {
-					PRINT "Setting joint"
+					//PRINT "Setting joint"
 					//joint = physics_joint_distance_create(self.id, other.id, self.x, self.y + self.sprite_height / 2, other.x, other.y - other.sprite_height / 2,  false)	
 					joint = physics_joint_rope_create(self.id, other.id, self.x, self.y + self.sprite_height / 2 + 3, other.x, other.y - other.sprite_height / 2 - 3,  5, false)	
 				}
@@ -51,7 +51,7 @@ function scrStopPlatform(platform) {
 	with (objMacguffin) {
 		
 		if (joint != noone) {
-			PRINT "Deleting joint"
+		//	PRINT "Deleting joint"
 			physics_joint_delete(joint)
 			joint = noone
 		}

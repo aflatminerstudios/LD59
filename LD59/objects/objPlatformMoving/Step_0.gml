@@ -33,7 +33,7 @@ if (!isPowered) {
 			
 			if (place_meeting(anchor1x, anchor1y, other.id) || place_meeting(anchor2x, anchor2y, other.id)) {			
 			
-				PRINT "Taking out joint"
+			//	PRINT "Taking out joint"
 				physics_joint_delete(joint)
 				joint = noone
 			}
@@ -49,7 +49,7 @@ if (path_position >= 1) {
 		completed = true
 	}
 	with (objMacguffin) {
-		PRINT "Removing joint"
+	//	PRINT "Removing joint"
 		if (joint != noone) {
 			physics_joint_delete(joint)
 			joint = noone

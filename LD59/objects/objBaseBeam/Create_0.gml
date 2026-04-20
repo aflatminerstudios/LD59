@@ -15,3 +15,4 @@ targetY = instance_find(objPlayer, 0).y
 draw_set_color(c_white)
 
 count=0
+owner = noone
