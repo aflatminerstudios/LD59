@@ -12,6 +12,7 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GMLive","folderPath":"folders/Extensions/GMLive.yy","name":"GMLive","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Audio","folderPath":"folders/Audio.yy","name":"Audio","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"beams","folderPath":"folders/Objects/beams.yy","name":"beams","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"map","folderPath":"folders/Objects/map.yy","name":"map","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -66,6 +67,7 @@
     {"id":{"name":"objMapBtnSelectRepair","path":"objects/objMapBtnSelectRepair/objMapBtnSelectRepair.yy",},},
     {"id":{"name":"objMapControl","path":"objects/objMapControl/objMapControl.yy",},},
     {"id":{"name":"objMirror","path":"objects/objMirror/objMirror.yy",},},
+    {"id":{"name":"objMusicManager","path":"objects/objMusicManager/objMusicManager.yy",},},
     {"id":{"name":"objPlatformBase","path":"objects/objPlatformBase/objPlatformBase.yy",},},
     {"id":{"name":"objPlatformMoving","path":"objects/objPlatformMoving/objPlatformMoving.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
@@ -104,6 +106,7 @@
     {"id":{"name":"scrPaths","path":"scripts/scrPaths/scrPaths.yy",},},
     {"id":{"name":"scrPlatforms","path":"scripts/scrPlatforms/scrPlatforms.yy",},},
     {"id":{"name":"Shader1","path":"shaders/Shader1/Shader1.yy",},},
+    {"id":{"name":"musCrowDesert","path":"sounds/musCrowDesert/musCrowDesert.yy",},},
     {"id":{"name":"sprBGDesertDay","path":"sprites/sprBGDesertDay/sprBGDesertDay.yy",},},
     {"id":{"name":"sprBGMapCinematic","path":"sprites/sprBGMapCinematic/sprBGMapCinematic.yy",},},
     {"id":{"name":"sprBGMapSchematic","path":"sprites/sprBGMapSchematic/sprBGMapSchematic.yy",},},
