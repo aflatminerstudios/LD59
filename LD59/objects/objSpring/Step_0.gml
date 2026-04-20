@@ -8,11 +8,11 @@ else
 
 if physics_test_overlap(x, y, image_angle, objMacguffin) {
 
-	var xPush = lengthdir_x(pushAmt, image_angle + 90)
-	var yPush = lengthdir_y(pushAmt, image_angle + 90)
+	var xPush = lengthdir_x(pushAmt, dir)
+	var yPush = lengthdir_y(pushAmt, dir)
 	with (objMacguffin) {
 
-		physics_apply_impulse(x, y, xPush, yPush)
+		physics_apply_force(x, y, xPush, yPush)
 		
 		PRINT string(xPush) + ", " + string(yPush) + " pushed"
 	}
