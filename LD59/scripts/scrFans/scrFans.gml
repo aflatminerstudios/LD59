@@ -8,7 +8,7 @@ function scrFanBlow(fan){
 
 
 	with (fan) {
-		
+			isPowered = true
 			var dir = image_angle
 			var xForce = lengthdir_x(totalForce, image_angle)
 			var yForce = lengthdir_y(totalForce, image_angle)

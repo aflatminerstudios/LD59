@@ -39,12 +39,28 @@ for (var i = 0; i < array_length(platforms); i++) {
 
 fans = physics_raycast(x, y, targetX, targetY, objFan, true, 1.05)
 
+with (objFan) {
+	/*var isIn = false;
+	for (var i = 0; i < array_length(other.fans); i++) {
+		if (other.fans[i].instance = self.id)
+			isIn = true;
+	}
+	if (!isIn) {*/
+		isPowered = false;	
+	//}
+}
+
+
 for (var i = 0; i < array_length(fans); i++) {
 	count = count + 1
 	with (fans[i].instance) {
 		scrFanBlow(self.id)
 	}
 }
+
+
+
+
 /*
 
 objects = physics_raycast(x, y, targetX, targetY, all, true, 1) 
