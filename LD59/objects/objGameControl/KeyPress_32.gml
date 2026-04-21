@@ -6,6 +6,7 @@ live_auto_call;
 //   After the event/function is live, just save the file to immediately see the changes in the running game.
 
 
-
-// When you hit space, goto map room
-room_goto(roomMap)
+if (enable_debug_controls) {
+	// When you hit space, goto map room
+	room_goto(roomMap)
+}

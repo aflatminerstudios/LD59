@@ -6,3 +6,6 @@
 
 //audio_group_load(audiogroup_default)
 */
+
+
+enable_debug_controls = true;
