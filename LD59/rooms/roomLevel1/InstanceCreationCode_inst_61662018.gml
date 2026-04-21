@@ -1,2 +1,2 @@
 totalForce = 65
-reach = 100
+reach = 400

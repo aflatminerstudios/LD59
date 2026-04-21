@@ -16,4 +16,8 @@ if physics_test_overlap(x, y, image_angle, objMacguffin) {
 		
 		//PRINT string(xPush) + ", " + string(yPush) + " pushed"
 	}
+	
+	sprite_index = sprSpringHit
+	alarm[1] = game_get_speed(gamespeed_fps) / 8
+	
 }

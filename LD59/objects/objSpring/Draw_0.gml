@@ -2,3 +2,5 @@
 //physics_world_draw_debug(flag);
 
 draw_self()
+
+draw_sprite(sprSpringGlow, glowSubimg, x, y)
