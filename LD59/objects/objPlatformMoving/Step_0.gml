@@ -14,7 +14,7 @@ if physics_test_overlap(x, y, dir, objMacguffin) && phy_speed_x < maxXSpeed
 }
 
 if (place_meeting(x, y, objPlatformBase)) {	
-	isPowered = false	
+	//isPowered = false	
 }
 
 //PRINT "Is powered " + string(isPowered) + ", " + string(count)
@@ -22,7 +22,7 @@ if (place_meeting(x, y, objPlatformBase)) {
 if (!isPowered) {
 	
 	path_speed = 0
-		
+	if 	 physics_test_overlap(x, y, dir, objMacguffin) {
 	with (objMacguffin) {		
 		
 		if (joint != noone) {
@@ -38,6 +38,7 @@ if (!isPowered) {
 				joint = noone
 			}
 		}
+	}
 	}
 	
 }
