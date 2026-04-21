@@ -10,9 +10,9 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"Audio","folderPath":"folders/Audio.yy","name":"Audio","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GMLive","folderPath":"folders/Extensions/GMLive.yy","name":"GMLive","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Audio","folderPath":"folders/Audio.yy","name":"Audio","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"beams","folderPath":"folders/Objects/beams.yy","name":"beams","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"map","folderPath":"folders/Objects/map.yy","name":"map","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -102,6 +102,7 @@
     {"id":{"name":"scrFans","path":"scripts/scrFans/scrFans.yy",},},
     {"id":{"name":"scrFixtures","path":"scripts/scrFixtures/scrFixtures.yy",},},
     {"id":{"name":"scrMap","path":"scripts/scrMap/scrMap.yy",},},
+    {"id":{"name":"scrMiscLevel","path":"scripts/scrMiscLevel/scrMiscLevel.yy",},},
     {"id":{"name":"scrMiscScreens","path":"scripts/scrMiscScreens/scrMiscScreens.yy",},},
     {"id":{"name":"scrPaths","path":"scripts/scrPaths/scrPaths.yy",},},
     {"id":{"name":"scrPlatforms","path":"scripts/scrPlatforms/scrPlatforms.yy",},},

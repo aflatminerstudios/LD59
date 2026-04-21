@@ -12,19 +12,17 @@ switch (level) {
 		room_goto(roomLevel2);
 		break;
 		
-	// TODO: Uncomment these lines when remaining levels are in the tree -- Micha TODO	
+	case 3:
+		room_goto(roomLevel3);
+		break;
 		
-	//case 3:
-	//	room_goto(roomLevel3);
-	//	break;
+	case 4:
+		room_goto(roomLevel4);
+		break;
 		
-	//case 4:
-	//	room_goto(roomLevel4);
-	//	break;
-		
-	//case 5:
-	//	room_goto(roomLevel5);
-	//	break;
+	case 5:
+		room_goto(roomLevel5);
+		break;
 		
 	default:
 		PRINT("Unknown level in objMapBtnSelectRepair.LeftPressed event!");
