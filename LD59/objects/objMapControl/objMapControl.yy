@@ -10,8 +10,8 @@
   "name":"objMapControl",
   "overriddenProperties":[],
   "parent":{
-    "name":"misc_screens",
-    "path":"folders/Objects/misc_screens.yy",
+    "name":"map",
+    "path":"folders/Objects/map.yy",
   },
   "parentObjectId":null,
   "persistent":false,
